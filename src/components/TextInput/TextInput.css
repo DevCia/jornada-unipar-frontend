@@ -1,0 +1,26 @@
+.text-field {
+  @apply w-full;
+  @apply box-border;
+  @apply m-3;
+
+  & .text-field--input {
+    @apply w-full;
+    @apply h-12;
+    @apply px-2;
+    @apply border-solid border border-stone-300 rounded-lg;
+    &.text-field--input__error {
+      @apply border-red-500;
+    }
+  }
+  & .text-field--label {
+    @apply w-full;
+    @apply text-lg font-medium;
+  }
+
+  & .text-field--error {
+    @apply px-2;
+    @apply text-red-500;
+    @apply text-xs;
+    @apply w-full;
+  }
+}

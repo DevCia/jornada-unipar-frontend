@@ -1,0 +1,40 @@
+.file-field {
+  @apply w-full;
+  @apply box-border;
+  @apply m-3;
+
+  & .file-field--input {
+    @apply block;
+    @apply w-full;
+    @apply h-12;
+    @apply p-2;
+    @apply text-gray-900;
+    @apply border;
+    @apply border-gray-300;
+    @apply rounded-lg;
+    @apply cursor-pointer;
+    @apply bg-gray-50;
+    &::file-selector-button {
+      @apply bg-blue-700;
+      @apply px-2 py-1;
+      @apply text-white;
+      @apply font-semibold;
+      @apply rounded-lg;
+      @apply border-none;
+    }
+    &.file-field--input__error {
+      @apply border-red-500;
+    }
+  }
+  & .file-field--label {
+    @apply w-full;
+    @apply text-lg font-medium;
+  }
+
+  & .file-field--error {
+    @apply px-2;
+    @apply text-red-500;
+    @apply text-xs;
+    @apply w-full;
+  }
+}

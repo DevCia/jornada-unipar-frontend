@@ -1,0 +1,92 @@
+.card {
+  @apply my-2;
+  @apply mx-2;
+  @apply grow;
+  @apply border;
+  @apply bg-white;
+  @apply shadow-md;
+  @apply border-solid;
+  @apply rounded-lg;
+  @apply border-stone-200;
+  @apply p-4;
+  @apply justify-between;
+  @apply items-center;
+  @apply flex;
+}
+.avatar {
+  @apply rounded-full;
+  @apply w-20;
+  @apply h-20;
+  @apply p-3;
+  @apply flex;
+}
+.title {
+  @apply text-lg;
+  @apply font-bold;
+}
+.link {
+  @apply text-sky-600;
+  @apply flex;
+}
+.link:hover {
+  @apply underline;
+}
+.btn-whatsapp {
+  @apply bg-green-500;
+  @apply text-white;
+  @apply inline-block;
+  @apply rounded-md;
+  @apply font-semibold;
+  @apply p-2;
+  @apply text-center;
+  @apply flex;
+  @apply items-center;
+  @apply justify-center;
+  @apply w-28;
+}
+.btn-whatsapp:hover {
+  @apply bg-green-700;
+}
+.icon {
+  @apply pr-1;
+  @apply w-7;
+}
+
+.actions {
+  @apply flex;
+  @apply w-32;
+  @apply justify-between;
+}
+
+.btn-icon {
+  @apply text-3xl;
+  @apply text-neutral-400;
+}
+.btn-block:hover,
+.btn-block__active,
+.btn-favorite:hover,
+.btn-favorite__active {
+  @apply text-red-600;
+}
+.btn-edit:hover,
+.btn-edit__active {
+  @apply text-blue-500;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    @apply flex-col;
+  }
+  .avatar,
+  .title,
+  .link,
+  .btn-whatsapp,
+  .actions {
+    @apply my-2;
+  }
+
+  .avatar {
+    @apply w-28;
+    @apply h-28;
+  }
+}
